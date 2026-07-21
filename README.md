@@ -1,3 +1,5 @@
+![OpenG7 Platform](docs/assets/openg7-knowledge-core.png)
+
 # OpenG7 Knowledge Core
 
 Sovereign memory, provenance, semantic retrieval and knowledge graph foundation for the OpenG7 ecosystem.
