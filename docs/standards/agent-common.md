@@ -1,13 +1,3 @@
-# OpenG7 Knowledge Core — consignes
-
-## Mission
-
-Fournir mémoire souveraine, provenance, recherche hybride et graphe de connaissances à OpenG7.
-Dépôt de cadrage : aucun workspace applicatif ni manifest racine actuellement.
-Les APIs, dossiers et commandes du README sont des cibles à implémenter.
-
-<!-- openg7:common:start -->
-
 ## Socle commun OpenG7
 
 <!-- openg7-standard: 1 -->
@@ -38,35 +28,3 @@ Les APIs, dossiers et commandes du README sont des cibles à implémenter.
   effective ou un risque métier; elles ne recopient pas le socle.
 - Terminer par le diff, les contrôles applicables et `git diff --check`. Rapporter
   résultat, validations exécutées, limites et opérations restantes, sans faux succès.
-
-<!-- openg7:common:end -->
-
-## Périmètre local
-
-Ce dépôt possède ingestion, recherche et provenance; les consommateurs utilisent ses contrats publics. Il ne devient ni un moteur d’exécution d’agents ni un routeur de modèles.
-
-- Chaque unité garde source, version/commit, checksum, dates, juridiction, visibilité, transformations et état de vérification. Aucun contenu transformé sans provenance présenté comme autorité.
-- Appliquer droits, organisation, sensibilité et résidence aux résultats, fragments, citations et caches; une recherche vectorielle ne contourne pas les filtres d’accès.
-- Combiner recherche lexicale, sémantique, graphe et métadonnées selon le besoin. Livrer un contexte borné avec citations, pas un dump du stockage.
-- Les relations du graphe sont explicites et inspectables; une sortie de modèle non vérifiée ne crée pas un fait permanent.
-- Isoler stockage, embedding, graphe et connecteurs derrière des ports. Respecter révocation, suppression et règles de fraîcheur lors des réindexations.
-
-## Lectures selon la tâche
-
-<!-- prettier-ignore -->
-| Déclencheur | Référence |
-| --- | --- |
-| Frontière, nouveau module, dépendance | [Architecture](docs/ARCHITECTURE.md) |
-| provenance, ingestion, recherche, accès et graphe | Section correspondante du [README](README.md) |
-| Révision des consignes | [Standard](docs/standards/README.md) |
-
-## Validation
-
-Documentation/gouvernance : `node scripts/check-project-standards.mjs` et
-`git diff --check`. Pour du code, lire le manifest et la CI concernés; ne pas
-annoncer un lint, test ou build absent comme exécuté.
-
-## Maintenance
-
-Pour changer les consignes : [standard et budgets](docs/standards/README.md).
-Conserver le bloc commun synchronisé et les différences dans leur périmètre.
